@@ -1,0 +1,12 @@
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export ANDROID_NDK_VERSION=20.1.5948944
+export ANDROID_NDK_HOME="$ANDROID_SDK_ROOT/ndk/$ANDROID_NDK_VERSION"
+export ANDROID_NDK="$ANDROID_NDK_HOME"
+
+export ANDROID_ARCH=aarch64
+export ANDROID_TOOLCHAIN=4.9
+export ANDROID_API=21
+export BUILD_TYPE=release
+
+python3 ./waf configure --android=${ANDROID_ARCH},${ANDROID_TOOLCHAIN},${ANDROID_API} -T ${BUILD_TYPE}
+python3 ./waf build
