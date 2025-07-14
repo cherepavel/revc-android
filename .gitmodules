@@ -17,3 +17,6 @@
 [submodule "lib"]
 	path = lib
 	url = https://github.com/klaymen1n/revc-android-3rdparty-libs
+[submodule "vendor/openal-soft"]
+	path = vendor/openal-soft
+	url = https://github.com/kcat/openal-soft.git
